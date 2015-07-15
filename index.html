@@ -1,9 +1,70 @@
 <!Doctype html>
-<html>  
+<html lang="en-us">  
   <head>
+    <meta charset="utf-8"/>
+    <link rel="shortcut icon" href="images/solidsun.png"/>
+    <link rel=stylesheet href="css/main.css">
+    <script src="js/main.js"></script>
   </head>
   <body>
+<!--video autoplay loop id="bgvid">
+<source src="../video/polina.webm" type="video/webm">
+</video> -->
+    <nav>
+      <span class="location-field">Location</span>
+      <span>Contacts</span>
+      <span>Articles</span>
+      <span>My location</span>
+      <span>Menu</span>
+    </nav>  
+    <h1>Let any weather make you smile!</h1>
+    <div id="main">
+      <table border="" >
+  				<tr>
+  					<td> Lviv
+  					<td> Kyiv
+  					<td> Odessa
+  				</tr>
+  				<tr>
+  					<td> Warsaw
+  					<td> Minsk
+  					<td> Bucaresti
+  				</tr>
+  				<tr>
+  					<td> London
+  					<td> New York
+  					<td> Tokio
+  				</tr>
+  			</tbody>
+		  </table>
+    </div>
+    <aside>main menu</aside>
+    <article>
+      <section></section>
+      <section></section>
+      <section></section>
+    </article>
     <p>Hello world </p>
-    <img src="images/gg.jpg" height="200px" width="400px"></img>
+    <img onclick="showthis();" src="images/sigal.jpg" height="150px" width="300px"></img>
+    <div class="contact-form">
+      <form method="post" action="">
+				<fieldset id="forms">
+					<label for="Name">Name</label>
+					<input type="Name" name="Name" placeholder="First Name"/>
+				</fieldset>
+				<fieldset>
+					<label for="e-mail">e-mail</label>
+					<input type="e-mail" name="e-mail" required autofocus="autofocus" pattern="[@][.][A-Z]" placeholder="yahoo only" />
+				</fieldset>
+				<fieldset>
+					<label for="feedback">feedback</label>
+					<input type="feedback" name="feedback" required placeholder="no more than 100 symbols" />
+				</fieldset>
+				<fieldset>
+					<button>Submit</button>
+				</fieldset>
+			</form>
+    </div>
+    <footer>I'm footer</footer>
   </body>
 </html>

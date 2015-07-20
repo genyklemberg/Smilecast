@@ -1,4 +1,4 @@
-jQuery(function(){
+$(function(){
     getWeatherData('ua', dataReceived, showError);
 
     function dataReceived(data) {

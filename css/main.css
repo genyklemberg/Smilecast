@@ -32,7 +32,8 @@ table {
     font-family: Tahoma;
     color: #e8eaf6;
     font-weight: 900;
-    background: -webkit-radial-gradient( 20px 30px, #c2185b, #e53935)
+    background: -webkit-radial-gradient(transparent, #00bcd4);
+    border-radius:5px;
 }
 
 #main {
@@ -47,18 +48,17 @@ table {
     bottom: auto;
 }
 
-
-
 nav {
-    display: block;
+    display: -webkit-inline-flex;
+    justify-content: flex-end;
     position: relative;
     text-align: center;
     padding: 20px;
     width: 100%;
+    max-width: 97%;
     height: 40px;
     z-index: 3000;
-    alignment-adjust: hanging;
-    background: -webkit-radial-gradient(50% 70%, blue,#00bcd4);
+    background: -webkit-radial-gradient(50% 50%, #00bcd4, #C8F5F6);
     border-bottom-left-radius: 3%;
     border-bottom-right-radius: 3%;
     margin: 0;
@@ -71,21 +71,61 @@ nav {
     height: 30px;
     border: none;
     line-height: 30px;
-    padding: 0 100px;
+    padding: 0 150px;
     background-color: #fff;
     text-align: center;
     width: 380px;
     -webkit-box-sizing: border-box;
     border-radius: 5px;
-    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.25), transparent 0 0 0;
+    box-shadow: 2px 2px 2px #7580D6;
+    cursor: pointer;
+}
+
+.location-field:hover {
+    background: -webkit-radial-gradient(white, yellow);
+    color: #22B5C0;
 }
 
 span {
-    border: 2px solid #00bcd4;
-    margin-right: 5px;
+    background-color: #C8F5F6;
+    color: #00bcd4;
+    font-family:Tahoma;
+    font-size: 18px;
+    height: 22px;
+    margin-right: 3px;
     float: right;
-    padding: 10px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #22B5C0;
+    cursor: pointer;
     
+}
+
+span:hover {
+    background: -webkit-radial-gradient(yellow, #C8F5F6);
+}
+
+#spanf {
+    border-bottom-left-radius:10px;
+    border-top-left-radius:10px;
+}
+
+#spanl {
+    border-bottom-right-radius:10px;
+    border-top-right-radius:10px;
+    right: 2%;
+}
+
+#button-nav {
+    height: 30px;
+    width: auto;
+    border-radius: 5px;
+    background-color:#C8F5F6;
+    flex: none;
+    position: absolute;
+    right: 3%;
+    z-index: -3000;
+    margin:0;
+    padding:0;
 }
 
 h1 {
@@ -93,3 +133,137 @@ h1 {
     font-family: Tahoma;
     color: #444;
 }
+
+h4 {
+    text-align: center;
+    font-family: Tahoma;
+    color: #444;
+}
+
+article {
+    margin: 50px 100px;
+    border: 2em;
+    padding: 20px, 20px;
+    color: #444;
+    font-family:"verdana",sans-serif;
+    left: 100px;
+    right: 100px;
+    top: auto;
+    bottom: auto;
+    -webkit-column-count: 3;
+    background: -webkit-radial-gradient(transparent, #00bcd4);
+    border-radius:5px;
+    
+}
+
+section {
+    padding: 10px;
+    margin-right: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+td a {
+    color:blue;
+    font-family:Tahoma;
+    font-weight: bold;
+}
+
+td a:hover {
+    color:yellow;
+}
+
+
+aside {
+    position: fixed;
+    margin-left:15px;
+    margin-top:20px;
+    height:auto;
+    width:70px;
+}
+
+#aside {
+    margin: 2px;
+    border-radius:10px;
+}
+
+#aside:hover {
+    background: -webkit-radial-gradient(yellow, #C8F5F6);
+}
+
+button {
+    background-image: url("images/sigal.jpg");
+    width: 70px;
+    height: 10%;
+}
+
+footer {
+    color: white;
+    width: auto;
+    height: 100px;
+    margin: 20px 0 0 0;
+    padding: 20px 10% 20px 10%;
+    background: -webkit-linear-gradient(top, transparent, #00bcd4 95%, transparent);
+}
+
+#social-items {
+    list-style:none;
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    display:block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+    font-size: 15px;
+    line-height: 14px;
+    color: #ababab;
+    font-family: 'NotoSans-Regular',Arial,sans-serif;
+}
+
+#social-icons li {
+    float:left;
+    margin-right:8px;
+    display:list-item;
+    text-align: -webkit-match-parent;
+}
+
+#social-icons li a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url('..//images/sitesocial.png')
+}
+
+.icon-facebook a {
+    background-position:0,-154px;
+}
+
+@media (max-width:850px){
+    nav>span {
+        display:none;
+    }
+    #button-nav {
+        right:5%;
+    }
+    h1 {
+        font-size:30px;
+        margin-left: 7%;
+    }
+
+@media (max-width:650px){
+    nav>span {
+        display:none;
+    } 
+    #button-nav {
+        right:10%;
+    }
+    h1 {
+        margin-left: 15%;
+        font-size:18px;
+    }
+    

@@ -11,60 +11,71 @@
 <source src="../video/polina.webm" type="video/webm">
 </video> -->
     <nav>
-      <span class="location-field">Location</span>
-      <span>Contacts</span>
-      <span>Articles</span>
+      <section class="location-field">Location</section>
+      <span id="spanf">Menu</span>
       <span>My location</span>
-      <span>Menu</span>
-    </nav>  
+      <span>Articles</span>
+      <span id="spanl">Contacts</span>
+      <button id="button-nav"><a href="page2.html">menu</a></button>
+    </nav>
+    <aside>
+      <ul>
+        <span id="aside">Location</span>
+        <span id="aside">Location</span>
+        <span id="aside">Location</span>
+        <span id="aside">Location</span>
+      </ul>
+    </aside>
     <h1>Let any weather make you smile!</h1>
     <div id="main">
       <table border="" >
   				<tr>
-  					<td> Lviv
-  					<td> Kyiv
-  					<td> Odessa
+  					<td><a href="page2.html">Lviv</a>
+  					<td><a href="page2.html">Lviv</a>
+  					<td><a href="page2.html">Lviv</a>
   				</tr>
   				<tr>
-  					<td> Warsaw
-  					<td> Minsk
-  					<td> Bucaresti
+  					<td><a href="page2.html">Lviv</a>
+  					<td><a href="page2.html">Lviv</a>
+  					<td><a href="page2.html">Lviv</a>
   				</tr>
   				<tr>
-  					<td> London
-  					<td> New York
-  					<td> Tokio
+  					<td><a href="page2.html">Lviv</a>
+  					<td><a href="page2.html">Lviv</a>
+  					<td><a href="page2.html">Lviv</a>
   				</tr>
   			</tbody>
 		  </table>
     </div>
     <aside>main menu</aside>
     <article>
-      <section></section>
-      <section></section>
-      <section></section>
+      <section><h4>Weather in Ukraine</h4>The climate of the Ukraine can be described as dry and continental
+                influenced climate with warm, dry summers and fairly severe winters. 
+                January is the coldest month with daytime temperatures usually around 0°C,
+                but in some cases winter months can be quite colder with temperatures far below zero,
+                about -20°C or lower and strong, cold northeasterly winds, called Bora. 
+                Heavy snowfall or even snowstorms are also possible on some days. 
+                There are more than 290 sunny days in the year. 
+                Since Odessa region is drawn out along the meridian, 
+                the climate in the narrow 30-40 km. stretch along the coast is practically ideal,
+                with the soft tang of the sea mixing with the dry climate of the steppe further inland.
+      </section><img src="images/morfield.jpg" alt="sunny fields"  WIDTH=350px HEIGHT=210px align=center> 
+      <section><br>In summer daytime temperatures reach 25-30°C, but sometimes quite higher, 
+                35°C or more, especially in the inland areas. The summer months enjoy dry weather with sunny spells most of the time, 
+                rain often falls with sometimes heavy Thunderstorms, but mostly along the coastal areas of the Black Sea. 
+                These Thunderstorms often occur at the end of the day. July is the warmest month with an average Temperature of 24°C. 
+                Annual Precipitation is about 400-600 mm, but lower in the inland areas of the Ukraine.
+      </section>
+      <section><br>Generally, the weather is best May-September, when days are warm and the nights are cool, although it rains more in Spring than in summer. 
+                Autumn and Winter are usually a little chilly and wet along the coastal areas of the Black Sea, and dryer further inland.
+      </section>
     </article>
-    <p>Hello world </p>
-    <img onclick="showthis();" src="images/sigal.jpg" height="150px" width="300px"></img>
-    <div class="contact-form">
-      <form method="post" action="">
-				<fieldset id="forms">
-					<label for="Name">Name</label>
-					<input type="Name" name="Name" placeholder="First Name"/>
-				</fieldset>
-				<fieldset>
-					<label for="e-mail">e-mail</label>
-					<input type="e-mail" name="e-mail" required autofocus="autofocus" pattern="[@][.][A-Z]" placeholder="yahoo only" />
-				</fieldset>
-				<fieldset>
-					<label for="feedback">feedback</label>
-					<input type="feedback" name="feedback" required placeholder="no more than 100 symbols" />
-				</fieldset>
-				<fieldset>
-					<button>Submit</button>
-				</fieldset>
-			</form>
-    </div>
-    <footer>I'm footer</footer>
+    <footer>
+      <h1>I'm footer</h1>
+      <ul id="social-icons">
+        <li class="icon-facebook"><a href="//www.facebook.com"></a></li>
+      </ul>
+    </footer>
+    <a href="#" hover="scroll(0,0); return false" title="наверх"></a>
   </body>
 </html>

@@ -1,4 +1,9 @@
-jQuery(function(){
+$(function(){
+    var locale = 'us',
+		weatherDiv = $('#weather'),
+		scroller = $('#scroller'),
+		location = $('h1.location');
+		
     getWeatherData('ua', dataReceived, showError);
 
     function dataReceived(data) {
@@ -20,14 +25,15 @@ jQuery(function(){
     }
 
     function addWeather(icon, day, condition, temp){
-        var markup = '<tr>'+
-                '<td>' + day + '</td>' +
-                '<td>' + '<img src="images/icons/'+ icon +'.png" />' + '</td>' +
-                '<td>' + temp + '</td>' +
-                '<td>' + condition + '</td>'
-            + '</tr>';
-        weatherTable.insertRow(-1).innerHTML = markup; // Add a line to the table
-    }
+        var markup = '<li>' +
+			'<p class="table_day_name">' + day +'</p>' +
+            '<p class="table_day_pic"><img src="../images/'+ icon + '.png" /></p>' +
+			'<p class="table_day_descr">' + condition + '</p>' +
+            '<p class="table_day_descr">' + temp + '</p>' +
+			'</p></li>';
+
+		scroller.append(markup);
+	}
 
     function showError(msg){
         $('#error').html('error occurred' + msg);

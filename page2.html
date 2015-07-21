@@ -1,24 +1,41 @@
-<!Doctype html>
+<!doctype html>
 <html lang="en-us">
     <head>
         <meta charset="utf-8"/>
         <link rel="shortcut icon" href="images/solidsun.png"/>
         <link rel=stylesheet href="css/main.css">
-        <script src="js/main.js"></script>
     </head>
     <body>
         <!--section id="location">
             <input type="feedback" required placeholder="location"/>
         </section-->
-        <p>City: <span id="location"></span></p>
-        <table id="weatherTable">
-            <tr>
-                <th>When</th>
-                <th>Clouds</th>
-                <th>Temp</th>
-                <th>Status</th>
-            </tr>
-        </table>
+        <nav>
+          <input class="location-field" name="Location" id="location" value="">
+          <span id="spanf">Menu</span>
+          <span>My location</span>
+          <span>Articles</span>
+          <span id="spanl">Contacts</span>
+          <button onclick="#" id="button-nav"></button>
+        </nav>
+        <aside>
+          <ul>
+            <span id="aside">Location</span>
+            <span id="aside">Location</span>
+            <span id="aside">Location</span>
+            <span id="aside">Location</span>
+          </ul>
+        </aside>
+        <div id="content">
+            <div class="location center">
+                <h1 id="location"></h1>
+            </div>
+
+            <div id="weather_cont" class="center">
+                <ul id="scroller">
+                    <!-- The forecast items will go here -->
+                </ul>	
+            </div>
+        </div>
         
         <p id="error"></p>
         

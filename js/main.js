@@ -1,9 +1,10 @@
 $(function(){
+    
     var locale = 'us',
 		weatherDiv = $('#weather'),
 		scroller = $('#scroller'),
 		location = $('h1.location');
-		
+
     getWeatherData('ua', dataReceived, showError);
 
     function dataReceived(data) {

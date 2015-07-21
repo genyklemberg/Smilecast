@@ -321,30 +321,6 @@ footer {
     margin: 0;
 }
 
-.nav li {
-    font-family:'Open Sans', sans-serif; 
-    font-size: 1em;
-    font-weight: 500;
-    width: 300px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    display: inline-block;
-    margin-right: -4px;
-}
-
-.nav li a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    transition: .3s background-color;
-}
-
-.nav a:hover {
-    background-color: #8DB580;
-    cursor: pointer;
-}
-
 .center {
     margin: 90px auto 35px auto;
 }

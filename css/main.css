@@ -152,20 +152,26 @@ span:hover {
 
 aside {
     position: fixed;
-    margin-left: 15px;
     margin-top: 20px;
-    height: auto;
-    width: 70px;
+    
 }
 
 #aside {
-    margin: 2px;
-    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10%;
+    margin-left: -20px;
+    border-radius: 4px;
+    list-style: none;
+    height: auto;
+    width: 70px;
+    box-shadow: 2px 2px 7px black;
 }
 
 #aside:hover {
     background: -webkit-radial-gradient(white, #C8F5F6);
     color: #444;
+    cursor: pointer;
 }
 
 /*
@@ -206,6 +212,10 @@ section {
 
 a {
     text-decoration: none;
+    color: #999;
+    font: Tahoma;
+    font-size: 110%;
+    
 }
 
 td a {
@@ -305,7 +315,18 @@ footer {
 }
 
 /*
-    OTHER
+    Page1
+            */
+
+.contact-form {
+    width: 80%;
+    margin: 5% 10%;
+}
+            
+            
+
+/*
+    Page2
                 */
                 
 #content {
@@ -366,6 +387,10 @@ footer {
     }
 }
 
+/*
+    Media
+            */
+
 @media (max-width:850px) {
     nav>span {
         display: none;
@@ -381,6 +406,9 @@ footer {
         font-size: 30px;
         margin-left: 7%;
     }
+    .contact-form {
+    margin-left: 15%;
+}
 }
 
 @media (max-width:650px) {

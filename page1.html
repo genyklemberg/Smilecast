@@ -7,9 +7,21 @@
         <script src="js/main.js"></script>
     </head>
     <body>
-        <p>What is here?</p>
-        <p>Hello world </p>
-        <img onclick="showthis();" src="images/sigal.jpg" height="150px" width="300px"></img>
+        <nav>
+          <span id="spanf"><a href="index.html">Menu</a></span>
+          <span><a href="page2.html">My location</a></span>
+          <span><a href="page1.html">Articles</a></span>
+          <span id="spanl"><a href="page1.html">Contacts</a></span>
+          <button onclick="#" id="button-nav"></button>
+        </nav>
+        <aside>
+          <ul>
+            <li id="aside">Lviv, UA</li>
+            <li id="aside">Tuesday</li>
+            <li id="aside"><img src="images/01d.png" width="30px" height="30px"></li>
+            <li id="aside">25°C</li>
+          </ul>
+        </aside>
         <div class="contact-form">
             <form method="post" action="">
                 <fieldset id="forms">
@@ -18,11 +30,11 @@
                 </fieldset>
                 <fieldset>
 					<label for="e-mail">e-mail</label>
-					<input type="e-mail" name="e-mail" required autofocus="autofocus" pattern="[@][.][A-Z]" placeholder="yahoo only" />
+					<input type="e-mail" name="e-mail" required autofocus="autofocus" pattern="[a-z][@][.]" placeholder="name@mail.com" />
 				</fieldset>
 				<fieldset>
 					<label for="feedback">feedback</label>
-					<input type="feedback" name="feedback" required placeholder="no more than 100 symbols" />
+					<input type="feedback" name="feedback" required placeholder="no more than 100 symbols" width="300px"/>
 				</fieldset>
 				<fieldset>
 					<button>Submit</button>

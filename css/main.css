@@ -1,35 +1,30 @@
-/*video#bgvid {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover;
-}*/
-
 /*
     BODY
             */
 
 body {
     font-family: Tahoma;
-    background: url(../images/sky.jpg);
-    background-size: cover;
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: -100;
+    background-color: #444;
     margin: 0;
     padding: 0;
     border: 0;
 }
 
+video#bgvid {
+    position: fixed;
+    float: left;
+    z-index: -100;
+    -webkit-background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+
 table {
+    box-sizing: border-box;
     width: 100%;
     height: 500px;
     text-align: center;
@@ -63,16 +58,14 @@ nav {
     flex-wrap: nowrap;
     position: relative;
     text-align: center;
-    padding: 20px;
     width: 100%;
-    max-width: 97%;
-    height: 40px;
     z-index: 3000;
     background: -webkit-radial-gradient(50% 50%, #fff, #999);
     border-bottom-left-radius: 3%;
     border-bottom-right-radius: 3%;
     margin: 0;
     box-shadow: 0 3px 1px #fff;
+    
 }
 
 .location-field {
@@ -84,61 +77,54 @@ nav {
     line-height: 30px;
     padding: 0 5%;
     margin-right: 20%;
-    background-color: #fff;
+    background-color: transparent;
     text-align: center;
     width: 380px;
     -webkit-box-sizing: border-box;
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px #444;
     cursor: pointer;
 }
 
 .location-field:hover {
-    background: -webkit-radial-gradient(white, #C8F5F6);
-    color: #444;
+    background: -webkit-radial-gradient(white, #E2E5F2);
+    border-radius: 5px;
+    color: #111;
+    
 }
 
 span {
     white-space: nowrap;
-    background-color: #fff;
-    color: #999;
+    width: 7%;
+    background-color: transparent;
+    color: #444;
     font-family: Tahoma;
-    font-size: 16px;
-    height: 22px;
-    margin-right: 3px;
+    font-size: 14px;
+    text-align: center;
+    padding: 3px;
     float: right;
-    padding: 5px;
-    box-shadow: 2px 2px 2px #444;
     cursor: pointer;
     
 }
 
 span:hover {
-    background: -webkit-radial-gradient(white, #C8F5F6);
-    color: #444;
-}
-
-#spanf {
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    background: -webkit-linear-gradient(#777,white, #999);
+    color: white;
+    
 }
 
 #spanl {
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    right: 2%;
+    margin-right: 4%;
 }
 
 #button-nav {
     height: 30px;
     width: 30px;
-    border-radius: 5px;
-    background-color: #999;
+    border-radius: 2px;
+    background-color: transparent;
     flex: none;
-    position: absolute;
-    right: 3%;
-    z-index: -3000;
-    margin: 0;
+    position: fixed;
+    z-index: 3000;
+    right: 1%;
+    top: 0;
     padding: 0;
     background-image: url(../images/13d.png);
     background-position: center center;
@@ -165,11 +151,11 @@ aside {
     list-style: none;
     height: auto;
     width: 70px;
-    box-shadow: 2px 2px 7px black;
+    background: -webkit-radial-gradient(white, #999)
 }
 
 #aside:hover {
-    background: -webkit-radial-gradient(white, #C8F5F6);
+    background: -webkit-linear-gradient(#777,white, #999);
     color: #444;
     cursor: pointer;
 }

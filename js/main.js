@@ -13,7 +13,7 @@ $(function(){
         var country = data.city.country;
 
         $.each(data.list, function(){
-            // "this" òðèìàº îá'ºêò ïðîãíîçó çâ³äñè: http://openweathermap.org/forecast16
+            // "this" takes forecast object from here http://openweathermap.org/forecast16
             var localTime = new Date(this.dt*1000 - offset); // convert from UTC time to local
             addWeather(
                 this.weather[0].icon,
@@ -28,7 +28,7 @@ $(function(){
     function addWeather(icon, day, condition, temp){
         var markup = '<li>' +
 			'<p class="table_day_name">' + day +'</p>' +
-            '<p class="table_day_pic"><img src="../images/'+ icon + '.png" /></p>' +
+            '<p class="table_day_pic"><img src="images/'+ icon + '.png" /></p>' +
 			'<p class="table_day_descr">' + condition + '</p>' +
             '<p class="table_day_descr">' + temp + '</p>' +
 			'</p></li>';

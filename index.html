@@ -11,12 +11,12 @@
     </video class="clearfix">
     <nav>
       <input class="location-field" name="Location" placeholder="Location" value="">
-      <span id="spanf"><a href="index.html">Menu</a></span>
-      <span><a href="page2.html">My location</a></span>
-      <span><a href="page1.html">Articles</a></span>
-      <span id="spanl"><a href="page1.html">Contacts</a></span>
+      <span><a onclick="menu()">Menu</a></span>
+      <span><a onclick="forecast()">My location</a></span>
+      <span><a onclick="articles()">Articles</a></span>
+      <span id="spanl"><a onclick="forms()">Contacts</a></span>
     </nav>
-    <button onclick="page1.html" id="button-nav"></button>
+    <button onclick="href('page1.html')" id="button-nav"></button>
     <aside>
       <ul>
         <li id="aside">Lviv, UA</li>
@@ -45,7 +45,18 @@
 				</tr>
 		  </table>
     </div>
-    <aside>main menu</aside>
+    <div id="content">
+      <div class="location center">
+        <h1 id="location"></h1>
+      </div>
+      <div id="weather_cont" class="center">
+        <ul id="scroller">
+          <!-- The forecast items will go here -->
+        </ul>	
+      </div>
+    <p id="error"></p>    
+    </div>
+    <p class="clearfix"></p>
     <article>
       <section><h4>Weather in Ukraine</h4>The climate of the Ukraine can be described as dry and continental
                 influenced climate with warm, dry summers and fairly severe winters. 
@@ -68,6 +79,25 @@
                 Autumn and Winter are usually a little chilly and wet along the coastal areas of the Black Sea, and dryer further inland.
       </section>
     </article>
+    <div class="contact-form">
+      <form method="post" action="">
+        <fieldset id="forms">
+          <label for="Name">Name</label>
+          <input type="Name" name="Name" placeholder="First Name"/>
+        </fieldset>
+        <fieldset>
+    			<label for="e-mail">e-mail</label>
+    			<input type="e-mail" name="e-mail" id="e-mail" required autofocus="autofocus" pattern="[a-z][@][.]" placeholder="name@mail.com" />
+    		</fieldset>
+    		<fieldset>
+    			<label for="feedback">feedback</label>
+    			<input type="feedback" name="feedback" required placeholder="no more than 100 symbols" width="300px"/>
+    		</fieldset>
+    		<fieldset>
+    			<button type="button" onclick="eMail();">Submit</button>
+    		</fieldset>
+    	</form>		
+    </div>
     <footer>
       <p>FOLLOW US</p>
       <ul id="social-icons">

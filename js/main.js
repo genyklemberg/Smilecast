@@ -40,3 +40,27 @@ $(function(){
         $('#error').html('error occurred' + msg);
     }
 });
+
+function eMail() {
+    var value = document.getElementById("e-mail").value;
+    if (value.indexOf("@",".") >-1) {
+        var modifier = "";
+    }   else {
+        modifier = "not ";
+    }
+    var report = "You entered '" + value + "'; this is " + modifier + "a valid e-mail.";
+    alert(report);
+    
+}
+
+function forecast() {
+    
+}
+
+function articels() {
+    
+}
+
+function forms() {
+    
+}

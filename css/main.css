@@ -189,6 +189,7 @@ article {
     -webkit-column-count: 3;
     background: -webkit-radial-gradient(transparent, #999);
     border-radius: 5px;
+    white-space: pre-line;
     
 }
 
@@ -333,7 +334,7 @@ footer {
 }
 
 #weather_cont {
-    width: 740px;
+    width: 1000px;
     margin: auto;
 }
 
@@ -360,18 +361,18 @@ footer {
     box-shadow: 2px 2px 3px 0 rgba(0,0,0, .2);
 }
 
-.clearfix {
-    *zoom: 1;
-    &:before,
-    &:after {
-        display:table;
+
+
+.clearfix:after {
+        display: table;
         content:"";
-        line-height:0;
+        
     }
-    &:after {
+    
+.clearfix:after {
         clear: both;
     }
-}
+
 
 /*
     Media
@@ -408,4 +409,5 @@ footer {
         margin-left: 15%;
         font-size:18px;
     }
+    
     

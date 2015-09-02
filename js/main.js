@@ -51,16 +51,49 @@ function eMail() {
     var report = "You entered '" + value + "'; this is " + modifier + "a valid e-mail.";
     alert(report);
     
+};
+    
+
+function checkRange() {
+    var value = feedback.value,
+        paragraph_list = document.getElementsByTagName("p1"),
+        third_paragraph = paragraph_list[0];
+    if (value >= 8) {
+        display = "block";
+    } else {
+        display = "none";
+    }
+    third_paragraph.style.display = display;
+    
+};
+
+function aside() {
+    var name = bloggger.name,
+        aside_list = document.getElementsByTagName("li"),
+        first_list = aside_list[1];
+    first_list.innerHTML = name;
 }
 
-function forecast() {
-    
-}
+jQuery(function($) {
 
-function articels() {
-    
-}
+    $('#slider').sdSlider({
+        autoStart: { // an object containing:
+            active: false, // a boolean indicating whether to start the slider automatically
+            delay: 1000 // and a integer specifying the delay between each slide
+        },
+        border: { // an object containing:
+            color: '#f00', // the color of each image border as a string 
+            width: 0 // the width in px of each image border as an integer
+        },
+        controls: true, // a boolean to specify whether to display the dots controlling each slide
+        arrows: true, // a boolean to specify whether to display the left and right arrows
+        duration: 500 // the duration in ms of each animation as a integer
+    });
 
-function forms() {
+});
+
+setTimeout(function () {
+    scroll(0,0);
     
-}
+}, 100);
+

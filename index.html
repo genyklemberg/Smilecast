@@ -4,11 +4,12 @@
     <meta charset="utf-8"/>
     <link rel="shortcut icon" href="images/solidsun.png"/>
     <link rel=stylesheet href="css/main.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/weather-location.js"></script>
+    <script src="js/main.js"></script>
   </head>
-  <body>
-    <video autoplay loop id="bgvid" muted>
-      <source src="video/world.mp4" type="video/mp4">
-    </video class="clearfix">
+  <body onload="aside();">
     <nav>
       <input class="location-field" name="Location" placeholder="Location" value="">
       <span><a onclick="menu()">Menu</a></span>
@@ -27,10 +28,13 @@
     </aside>
     <h1>Let any weather make you smile!</h1>
     <div id="main">
+      <video autoplay loop id="bgvid" muted>
+      <source src="video/world.mp4" type="video/mp4">
+      </video>
       <table border="" >
         <tr>
 					<td><a href="page2.html" id="location"></a>
-					<td><a href="page2.html">Kyiv, UA</a>
+					<td id="bloggger"><a href="page2.html">Kyiv, UA</a>
 					<td><a href="page2.html">Odess, UA</a>
 				</tr>
 				<tr>
@@ -54,9 +58,7 @@
           <!-- The forecast items will go here -->
         </ul>	
       </div>
-    <p id="error"></p>    
-    </div>
-    <p class="clearfix"></p>
+    <p id="error"></p>
     <article>
       <section><h4>Weather in Ukraine</h4>The climate of the Ukraine can be described as dry and continental
                 influenced climate with warm, dry summers and fairly severe winters. 
@@ -91,12 +93,13 @@
     		</fieldset>
     		<fieldset>
     			<label for="feedback">feedback</label>
-    			<input type="feedback" name="feedback" required placeholder="no more than 100 symbols" width="300px"/>
+    			<input name="feedback" id="feedback" required placeholder="no more than 100 symbols" width="300px" type="number" min="1" max="9" oninput="checkRange();"/>
     		</fieldset>
     		<fieldset>
-    			<button type="button" onclick="eMail();">Submit</button>
+    			<button type="button" onclick="eMail()">Submit</button>
     		</fieldset>
     	</form>		
+    	<p1 style="display:none;"> less than 20 left</p1>
     </div>
     <footer>
       <p>FOLLOW US</p>
@@ -107,10 +110,5 @@
         <li class="icon-rss"><a href="//www.rss.com"></a></li>
       </ul>
     </footer>
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/moment.js"></script>
-    <script src="js/weather-location.js"></script>
-    <script src="js/main.js"></script>
-    <a href="#" hover="scroll(0,0); return false" title="наверх"></a>
   </body>
 </html>

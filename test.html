@@ -1,0 +1,13 @@
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<body>
+    <script>
+    $(function() {
+        $.getJSON("js/data.json", function(obj) {
+            $.each(obj, function(key, value) {
+            $('#target').append("<li>name: "+ value.name +", drink: "+ value.drink +"</li>");
+            });
+        }); 
+});
+    </script>
+    <ul id="target"></ul>    
+</body>

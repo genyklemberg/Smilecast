@@ -4,18 +4,19 @@
 
 body {
     font-family: Tahoma;
-    background-color: #444;
+    background-image: url(../images/arg-cloud.jpg);
+    -webkit-background-size: 100% 52%;
     margin: 0;
     padding: 0;
     border: 0;
 }
 
 video#bgvid {
-    position: fixed;
+    position: absolute;
     float: left;
     z-index: -100;
     -webkit-background-size: cover;
-    width: 100%;
+    width: 85%;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
@@ -26,13 +27,14 @@ video#bgvid {
 table {
     box-sizing: border-box;
     width: 100%;
-    height: 500px;
+    height: 650px;
     text-align: center;
     text-shadow: blur-radius 1;
     font-family: Tahoma;
     font-weight: 900;
     background: -webkit-radial-gradient(transparent, #999);
     border-radius: 5px;
+    overflow: hidden;
 }
 
 #main {
@@ -46,6 +48,7 @@ table {
     top: auto;
     bottom: auto;
 }
+
 
 /*
     NAVIGATION
@@ -63,6 +66,7 @@ nav {
     background: -webkit-radial-gradient(50% 50%, #fff, #999);
     border-bottom-left-radius: 3%;
     border-bottom-right-radius: 3%;
+    border: 1px #fff;
     margin: 0;
     box-shadow: 0 3px 1px #fff;
     
@@ -70,7 +74,6 @@ nav {
 
 .location-field {
     font-size: 20px;
-    color: #999;
     float: none;
     height: 30px;
     border: none;
@@ -87,7 +90,6 @@ nav {
 .location-field:hover {
     background: -webkit-radial-gradient(white, #E2E5F2);
     border-radius: 5px;
-    color: #111;
     
 }
 
@@ -95,7 +97,6 @@ span {
     white-space: nowrap;
     width: 7%;
     background-color: transparent;
-    color: #444;
     font-family: Tahoma;
     font-size: 14px;
     text-align: center;
@@ -109,6 +110,7 @@ span:hover {
     background: -webkit-linear-gradient(#777,white, #999);
     color: white;
     
+    
 }
 
 #spanl {
@@ -116,6 +118,7 @@ span:hover {
 }
 
 #button-nav {
+    display: none;
     height: 30px;
     width: 30px;
     border-radius: 2px;
@@ -177,6 +180,7 @@ h4 {
 }
 
 article {
+    width: 80%;
     margin: 50px 100px;
     border: 2em;
     padding: 20px, 20px;
@@ -199,7 +203,7 @@ section {
 
 a {
     text-decoration: none;
-    color: #999;
+    color: #444;
     font: Tahoma;
     font-size: 110%;
     
@@ -360,18 +364,6 @@ footer {
     background-color: #999;
     box-shadow: 2px 2px 3px 0 rgba(0,0,0, .2);
 }
-
-
-
-.clearfix:after {
-        display: table;
-        content:"";
-        
-    }
-    
-.clearfix:after {
-        clear: both;
-    }
 
 
 /*

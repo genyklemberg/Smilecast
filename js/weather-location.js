@@ -1,6 +1,6 @@
 function getWeatherDataByCityName(lang, fnOK, fnError, City) {
        $.getJSON(
-        'http://api.openweathermap.org/data/2.5/forecast/daily?q=' + encodeURIComponent(City) +
+        '//api.openweathermap.org/data/2.5/forecast/daily?id=702550&APPID=' + encodeURIComponent(City) +
          '&cnt=16&units=metric' + '&lang=' + lang + '&callback=?',
         fnOK);
 }
